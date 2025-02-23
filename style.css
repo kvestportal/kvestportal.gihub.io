@@ -23,6 +23,9 @@ body {
     border-radius: 8px;
     width: 90%;
     max-width: 500px;
+	
+	            justify-content: center; /* Горизонтальное центрирование */
+
 }
 
 .timer-title {
