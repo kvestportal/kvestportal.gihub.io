@@ -24,4 +24,17 @@ function startCountdown() {
     }, 1000);
 }
 
+// Функция для обновления высоты контейнера
+function updateContainerHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Инициализация высоты контейнера
+updateContainerHeight();
+
+// Обновление высоты при изменении размера окна
+window.addEventListener('resize', updateContainerHeight);
+window.addEventListener('orientationchange', updateContainerHeight);
+
 startCountdown();
